@@ -1,10 +1,17 @@
 import { View } from "react-native";
-import { Text } from "react-native-paper";
+import { Button, Text } from "react-native-paper";
 
-export default function HomeScreen(){
-    return(
-     <View>
-        <Text>Home</Text>
-     </View>   
+export default function HomeScreen({ navigation }) {
+    return (
+        <View>
+            <Text>Home</Text>
+            <Button
+                onPress={() => {
+                    navigation.navigate("LoginScreen");
+                }}
+            >
+                Logar-se
+            </Button>
+        </View>
     );
 }
