@@ -12,21 +12,21 @@ function AppNavigator() {
     return (
         <NavigationContainer>
             <Stack.Navigator initialRouteName='Login'>
-             
-             <Stack.Screen name="HomeScreen" 
-             component={HomeScreen} 
-             options={{ title: 'Home'}}>
-            </Stack.Screen> 
 
-             <Stack.Screen name="LoginScreen"
-              component={LoginScreen}
-               options={{ title: 'Login'}}>
-               </Stack.Screen>
+                <Stack.Screen name="HomeScreen"
+                    component={HomeScreen}
+                    options={{ title: 'Home', headerShown: false }}>
+                </Stack.Screen>
 
-            <Stack.Screen name="RegisterScreen"
-              component={RegisterScreen}
-              options={{ tittle: 'Registro'}}>
-              </Stack.Screen>
+                <Stack.Screen name="LoginScreen"
+                    component={LoginScreen}
+                    options={{ title: 'Login', headerShown: false }}>
+                </Stack.Screen>
+
+                <Stack.Screen name="RegisterScreen"
+                    component={RegisterScreen}
+                    options={{ tittle: 'Registro', headerShown: false }}>
+                </Stack.Screen>
 
             </Stack.Navigator>
         </NavigationContainer>
